@@ -1,0 +1,30 @@
+{
+	"name": "Ds_api",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Apiconnection",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat(\n    'anshlambagit/ADFInterview/refs/heads/main/RawData/',\n    dataset().p_filename\n)",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
