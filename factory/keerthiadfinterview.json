@@ -1,0 +1,15 @@
+{
+	"name": "keerthiadfinterview",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "92a7ad7d-231b-480c-87a5-c42dc81ba77c",
+		"tenantId": "3f4a936b-7507-4ce6-a8ed-62d528e387d4"
+	}
+}
