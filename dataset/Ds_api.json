@@ -16,7 +16,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('anshlambagit/ADFInterview/refs/heads/main/Rawdata', dataset().p_filename)",
+					"value": "@concat(\n    'anshlambagit/ADFInterview/refs/heads/main/RawData/',\n    dataset().p_filename\n)",
 					"type": "Expression"
 				}
 			},
